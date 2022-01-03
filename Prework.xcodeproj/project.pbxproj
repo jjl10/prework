@@ -17,7 +17,6 @@
 		001143BB276F9AA200871050 /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001143BA276F9AA200871050 /* PreworkUITests.swift */; };
 		001143BD276F9AA200871050 /* PreworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001143BC276F9AA200871050 /* PreworkUITestsLaunchTests.swift */; };
 		001143CA276FC7F800871050 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001143C9276FC7F800871050 /* Launch Screen.storyboard */; };
-		001143CC276FD58900871050 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001143CB276FD58900871050 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		001143BA276F9AA200871050 /* PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITests.swift; sourceTree = "<group>"; };
 		001143BC276F9AA200871050 /* PreworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		001143C9276FC7F800871050 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		001143CB276FD58900871050 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 				0011439B276F9A9700871050 /* SceneDelegate.swift */,
 				0011439D276F9A9700871050 /* ViewController.swift */,
 				0011439F276F9A9700871050 /* Main.storyboard */,
-				001143CB276FD58900871050 /* SettingsViewController.swift */,
 				001143C9276FC7F800871050 /* Launch Screen.storyboard */,
 				001143A2276F9AA100871050 /* Assets.xcassets */,
 				001143A4276F9AA100871050 /* LaunchScreen.storyboard */,
@@ -268,7 +265,6 @@
 				0011439E276F9A9700871050 /* ViewController.swift in Sources */,
 				0011439A276F9A9700871050 /* AppDelegate.swift in Sources */,
 				0011439C276F9A9700871050 /* SceneDelegate.swift in Sources */,
-				001143CC276FD58900871050 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
