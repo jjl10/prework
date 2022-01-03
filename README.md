@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One challenge I encountered while building the app was having the segmented control contain 3 options rather than the default of 2 because I could not figure out how to add the third option.
 
 ## License
 
