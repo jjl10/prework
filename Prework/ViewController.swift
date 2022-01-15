@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //replaces segment tip values with custom input values from settings screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dvc = segue.destination as? SettingsViewController {
             dvc.changeTips = changeSegmentLabels
