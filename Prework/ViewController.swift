@@ -8,7 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //var means value can change
+    var tipPercentages = [15.0, 18.0, 20.0]
+    
+    //UI elm in view controller
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
@@ -20,39 +23,15 @@ class ViewController: UIViewController {
         //Sets the title in the Navigation Bar
         self.title = "Tip Calculator"
         
-        // Do any additional setup after loading the view.
     }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        print("view will appear")
-//        // This is a good place to retrieve the default tip percentage from UserDefaults
-//        // and use it to update the tip amount
-//        let tipPercentages = [0.15, 0.18, 0.2]
-//    }
-//
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        print("view did appear")
-//    }
-//
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        print("view will disappear")
-//    }
-//
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        print("view did disappear")
-//    }
-    
+
     @IBAction func calculateTip(_ sender: Any) {
-        //get bill amt from text field input and if none, let default be 0
+        //get bill amt from text field input and if none - checked by ??, let default be 0
         let bill = Double(billAmountTextField.text!) ?? 0
         
         //get total tip by multiplying tip * tipPercentage
-        let tipPercentages = [0.15, 0.18, 0.2]
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        //FIX THIS
+        let tip = bill * (tipPercentages[tipControl.selectedSegmentIndex])/100.0
         let total = tip + bill
         
         //update tip amount label
@@ -60,5 +39,28 @@ class ViewController: UIViewController {
         //update total amount
         totalLabel.text = String(format: "$%.2f", total)
     }
+
+
+//ex let emptyArray: [String] = [] (: is indicating the type for the elm will follow)
+//? following type means it can be innitialized without being defined
+    func changeSegmentLabels(percentages : [String?]) {
+        if (percentages.count == 3) {
+            for (index, percent) in percentages.enumerated(){
+                //tipControl is the segmented control
+                tipControl.setTitle((percent ?? "0") + "%", forSegmentAt:index)
+                //set tipPercentages for computing
+                tipPercentages[index] = Double(percentages[index] ?? "0") ?? 0
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dvc = segue.destination as? SettingsViewController {
+            dvc.changeTips = changeSegmentLabels
+            print("changed default percentages")
+        }
+    }
 }
 
+
+    
