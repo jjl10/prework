@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] additional settings screen where custom tip percentages can be inputted by user and lead to changes in the Tip Calculator home screen.
+- [X] additional settings screen where custom tip percentages can be inputted by user and lead to changes in the Tip Calculator home screen.
 
 ## Video Walkthrough
 
