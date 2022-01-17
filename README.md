@@ -4,7 +4,7 @@
 
 Submitted by: **Jasmine Lee**
 
-Time spent: **3** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] additional settings screen where custom tip percentages can be inputted by user and lead to changes in the Tip Calculator home screen.
 
 ## Video Walkthrough
 
@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-One challenge I encountered while building the app was having the segmented control contain 3 options rather than the default of 2 because I could not figure out how to add the third option.
+One challenge I encountered while building the app was having the segmented control contain 3 options rather than the default of 2 because I could not figure out how to add the third option. Another challenge that I faced and resolved without explicit instructions from the prework guide was connecting the user's input for custom tips in the settings screen to changes in the tip calculator home screen. 
 
 ## License
 
