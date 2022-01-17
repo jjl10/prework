@@ -34,7 +34,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-One challenge I encountered while building the app was having the segmented control contain 3 options rather than the default of 2 because I could not figure out how to add the third option. Another challenge that I faced and resolved without explicit instructions from the prework guide was connecting the user's input for custom tips in the settings screen to changes in the tip calculator home screen. Thirdly, another challenge I faced was creating the link to upload the gif showing the functionality of my app. I could not get the gif to load because the link created was always in the https://imgur.com/a/... format rather than the https://i.imgur.com/id.gif format so I downloaded the gif and took the ID from the downloaded gif's name in my mac's finder and was able to create a link in the right format to upload.
+One challenge I encountered while building the app was having the segmented control contain 3 options rather than the default of 2 because I could not figure out how to add the third option. Another challenge that I faced and resolved without explicit instructions from the prework guide was connecting the user's input for custom tips in the settings screen to changes in the tip calculator home screen. Thirdly, another challenge I faced was creating the link to upload the gif showing the functionality of my app. I could not get the gif to appear immediately in the readme because the link created was always in the https://imgur.com/a/... format rather than the https://i.imgur.com/id.gif format so I downloaded the gif and took the ID from the downloaded gif's name in my mac's finder and was able to create a link in the right format to upload.
 
 ## License
 
